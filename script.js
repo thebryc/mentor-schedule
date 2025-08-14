@@ -215,12 +215,12 @@ function displayResults(matches, query) {
                         <div class="info-value">${fullRole}</div>
                     </div>
                     <div class="info-item">
-                        <div class="info-label">Program Manager</div>
-                        <div class="info-value">${pm}</div>
-                    </div>
-                    <div class="info-item">
                         <div class="info-label">Training</div>
                         <div class="info-value">${training}</div>
+                    </div>
+                    <div class="info-item full-width">
+                        <div class="info-label">Program Manager</div>
+                        <div class="info-value">${pm}</div>
                     </div>
                 </div>
             </div>`;
