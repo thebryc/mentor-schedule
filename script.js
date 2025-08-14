@@ -5,7 +5,7 @@ Abby M,LM,Tuesday,Airline (14141 Airline Hwy Suite B),Ms. Madeleine (madeleine@t
 Adrieanne M,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc.org)
 Alayna F,LM,Monday,Downtown (460 N 11th St),N/A - Tutor (angela@thebryc.org) - Tutor
 Alex A,LM,Wednesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
-Alex C,SM,Monday,Downtown (460 N 11th St),TBD
+Alex C,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Alex T,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
 Allie D,SM,Monday,Downtown (460 N 11th St),Ms. Rachel (rachel@thebryc.org)
 Alyssa N,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc.org)
@@ -29,9 +29,9 @@ Cleve V,LM,Wednesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
 D'Andre T,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc.org)
 D'Metrie K,LM,Wednesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
 Danaila J,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc.org)
-Darius Spurlock,SSM,Monday,Downtown (460 N 11th St),TBD
+Darius Spurlock,SSM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Debra W,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org)
-Delores H,SM,Monday,Downtown (460 N 11th St),TBD
+Delores H,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Denisha C,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor
 Desiree R,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org)
 Destiny C,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor
@@ -39,7 +39,7 @@ Dr. Michelle D,LM,Monday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org
 Elise R,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
 Esther C,LM,Thursday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
 Esther P,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org)
-Eternity H,SM,Monday,Downtown (460 N 11th St),TBD
+Eternity H,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Georgia A,LM,Monday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
 Grace M,RM,Wednesday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org)
 Halisha A,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
@@ -54,8 +54,9 @@ Jay P,UPM,Tuesday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org)
 Jay S,LM,Monday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org)
 Jed K,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
 Joel S,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
+Josh H,SM,Monday,Downtown (460 N 11th St),Ms. Rachel (rachel@thebryc.org)
 Josh U,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor
-Josselyn G,SM,Monday,Downtown (460 N 11th St),TBD
+Josselyn G,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Julie O,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
 Kay B,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
 Kendrell W,UPM,Wednesday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org)
@@ -81,22 +82,22 @@ Nioz R,SM,Monday,Downtown (460 N 11th St),Ms. Rachel (rachel@thebryc.org)
 Nyria M,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor
 Olivia F,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
 Pamela R,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org)
-Paris T,SM,Monday,Downtown (460 N 11th St),TBD
+Paris T,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Parker S,SM,Monday,Downtown (460 N 11th St),Ms. Rachel (rachel@thebryc.org)
 Peyton D,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc.org)
 Precious M,LM,Monday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org)
-Precious S,SM,Monday,Downtown (460 N 11th St),TBD
+Precious S,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Preston D,LM,Monday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org)
 Queen J,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org)
 Reina Q,RM,Wednesday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org)
 Richard H,RM,Wednesday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org)
 Rineetha T,LM,Thursday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
-Rock T,SM,Monday,Downtown (460 N 11th St),TBD
+Rock T,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Rodney J,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
 Sharonda R,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
 Sierra C,RM,Tuesday,Airline (14141 Airline Hwy Suite B),Mr. Kendrick (kendrick@thebryc.org)
 Stephen H,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
-Stephen M,SM,Monday,Downtown (460 N 11th St),TBD
+Stephen M,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Tarralyn C,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor
 Tasha W,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor
 Taylor A,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org)
@@ -107,7 +108,7 @@ Trinity R,UPM,Wednesday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org)
 Tristan G,LM,Monday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org)
 Victoria R,LM,Tuesday,Airline (14141 Airline Hwy Suite B),Ms. Chasity (chasity@thebryc.org)
 Viranda K,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor
-Zee H,SM,Monday,Downtown (460 N 11th St),TBD
+Zee H,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org)
 Zenora H,LM,Monday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org)
 Zoe J,UPM,Thursday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org)`;
 
