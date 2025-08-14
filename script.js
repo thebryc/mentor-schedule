@@ -31,7 +31,7 @@ D'Andre T,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc
 D'Metrie K,LM,Wednesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),In-Person
 Danaila J,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc.org),Same Role
 Danielle N,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Same Role
-Darius Spurlock,SSM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Virtual Makeup
+Darius S,SSM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Virtual Makeup
 Debra W,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org),Virtual Makeup
 Delores H,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Virtual Makeup
 Denisha C,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
@@ -150,7 +150,7 @@ function parseCSV(csv) {
 const mentors = parseCSV(mentorData);
 const completeMentors = mentors.filter(mentor => 
     mentor['Name'] && mentor['Role'] && 
-    (mentor['Day'] && mentor['Campus']) || mentor['Role'] === 'Tutor'
+    ((mentor['Day'] && mentor['Campus']) || mentor['Role'] === 'Tutor')
 );
 
 const searchInput = document.getElementById('searchInput');
