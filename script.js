@@ -1,9 +1,10 @@
-// Mentor data with role expansions
-const mentorData = `Name + Last Initial,Assigned Role,Assigned Day,Assigned Campus,Assigned PM,Training Selection
+// Complete mentor data with all corrections from latest PDF
+const mentorData = `Name,Role,Day,Campus,PM,Training
 A'niya L,LM,Tuesday,Airline (14141 Airline Hwy Suite B),Ms. Madeleine (madeleine@thebryc.org),In-Person
 Abby M,LM,Tuesday,Airline (14141 Airline Hwy Suite B),Ms. Madeleine (madeleine@thebryc.org),In-Person
 Adrieanne M,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc.org),Virtual Makeup
-Alayna F,LM,Monday,Downtown (460 N 11th St),N/A - Tutor (angela@thebryc.org) - Tutor,
+AJ W,SM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Jakia (jakia@thebryc.org),Virtual Makeup
+Alayna F,LM,Monday,Downtown (460 N 11th St),N/A - Tutor (angela@thebryc.org),
 Alex A,LM,Wednesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),In-Person
 Alex C,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),In-Person
 Alex T,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Virtual Makeup
@@ -20,8 +21,8 @@ Bailey V,RM,Tuesday,Airline (14141 Airline Hwy Suite B),Mr. Kendrick (kendrick@t
 Breante M,SM,Monday,,Ms. Rachel (rachel@thebryc.org),In-Person
 Camille L,LM,Tuesday,Airline (14141 Airline Hwy Suite B),Ms. Chasity (chasity@thebryc.org),Same Role
 Cheryl D,UPM,Thursday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org),Same Role
-Chris M,SM,Tuesday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org),Same Role
-Chris M,UPM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Virtual Makeup
+Chris M,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Same Role
+Chris M,UPM,Thursday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org),Virtual Makeup
 Christeon L,LM,Wednesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),In-Person
 Christian G,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org),In-Person
 Chyna F,LM,Thursday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org),Same Role
@@ -33,9 +34,9 @@ Danielle N,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Sa
 Darius Spurlock,SSM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Virtual Makeup
 Debra W,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org),Virtual Makeup
 Delores H,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Virtual Makeup
-Denisha C,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor,In-Person
+Denisha C,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
 Desiree R,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org),In-Person
-Destiny C,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor,Same Role
+Destiny C,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
 Dr. Michelle D,LM,Monday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),In-Person
 Elise R,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),Same Role
 Esther C,LM,Thursday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),Virtual Makeup
@@ -47,7 +48,7 @@ Halisha A,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),
 Hannah A,UPM,Wednesday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org),In-Person
 Jacquari R,UPM,Monday,Airline (14141 Airline Hwy Suite B),Ms. Chasity (chasity@thebryc.org),Same Role
 Jada N,SM,Monday,Downtown (460 N 11th St),Ms. Rachel (rachel@thebryc.org),In-Person
-Jake C,UPM,Wednesday,Downtown (460 N 11th St),N/A - Tutor (angela@thebryc.org) - Tutor,Cannot attend - need to send recording
+Jake C,UPM,Wednesday,Downtown (460 N 11th St),N/A - Tutor (angela@thebryc.org),Cannot attend - need to send recording
 Jake P,SM,Monday,Downtown (460 N 11th St),Ms. Rachel (rachel@thebryc.org),Cannot attend - need to send recording
 Jaleah R,RM,Thursday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org),Virtual Makeup
 Jasmine S,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Virtual Makeup
@@ -56,7 +57,7 @@ Jay S,LM,Monday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org),In-
 Jed K,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),Same Role
 Joel S,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Same Role
 Josh H,SM,Monday,Downtown (460 N 11th St),Ms. Rachel (rachel@thebryc.org),
-Josh U,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor,In-Person
+Josh U,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
 Josselyn G,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Virtual Makeup
 Julie O,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),Same Role
 Kay B,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Virtual Makeup
@@ -64,7 +65,7 @@ Kendrell W,UPM,Wednesday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org
 Kenya C,UPM,Thursday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org),Virtual Makeup
 Kenzie B,LM,Monday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),In-Person
 Khadijah X,RM,Wednesday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org),Virtual Makeup
-Kiersten R,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor,Same Role
+Kiersten R,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
 Kim H,RM,Wednesday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org),Same Role
 Kimora H,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),In-Person
 KP P,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org),In-Person
@@ -82,7 +83,7 @@ Naturi S,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),
 Navy T,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Same Role
 Nikki D,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Same Role
 Nioz R,SM,Monday,Downtown (460 N 11th St),Ms. Rachel (rachel@thebryc.org),Virtual Makeup
-Nyria M,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor,Virtual Makeup
+Nyria M,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
 Olivia F,SM,Thursday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),Virtual Makeup
 Pamela R,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org),In-Person
 Paris T,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),In-Person
@@ -101,8 +102,8 @@ Sharonda R,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org)
 Sierra C,RM,Tuesday,Airline (14141 Airline Hwy Suite B),Mr. Kendrick (kendrick@thebryc.org),Same Role
 Stephen H,SM,Tuesday,Downtown (460 N 11th St),Ms. Mychell (mychell@thebryc.org),In-Person
 Stephen M,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),Virtual Makeup
-Tarralyn C,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor,Virtual Makeup
-Tasha W,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor,Same Role
+Tarralyn C,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
+Tasha W,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
 Taylor A,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),Virtual Makeup
 Taylor F,SM,Thursday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org),
 Tiffani F,UPM,Tuesday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),
@@ -110,13 +111,12 @@ Tomeka P,LM,Thursday,Downtown (460 N 11th St),Ms. Lauren (lauren@thebryc.org),
 Trinity R,UPM,Wednesday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org),
 Tristan G,LM,Monday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org),
 Victoria R,LM,Tuesday,Airline (14141 Airline Hwy Suite B),Ms. Chasity (chasity@thebryc.org),
-Viranda K,Tutor,,,N/A - Tutor (angela@thebryc.org) - Tutor,
+Viranda K,Tutor,TBD,N/A - Google Meets,N/A - Tutor (angela@thebryc.org),Virtual Makeup
 Zee H,SM,Monday,Downtown (460 N 11th St),Ms. Cat (catherine@thebryc.org),
 Zenora H,LM,Monday,Downtown (460 N 11th St),Mr. Kendrick (kendrick@thebryc.org),
 Zoe J,UPM,Thursday,Downtown (460 N 11th St),Ms. Esmine (esmine@thebryc.org),
 Zoe M,SM,Tuesday,Downtown (460 N 11th St),Ms. Jakia (jakia@thebryc.org),`;
 
-// Role mappings
 const roleMapping = {
     'LM': 'Learning Mentor',
     'RM': 'Research Mentor', 
@@ -126,7 +126,6 @@ const roleMapping = {
     'Tutor': 'Tutor'
 };
 
-// Parse CSV data
 function parseCSV(csv) {
     const lines = csv.trim().split('\n');
     const headers = lines[0].split(',');
@@ -140,8 +139,7 @@ function parseCSV(csv) {
             entry[header.trim()] = values[index] ? values[index].trim() : '';
         });
         
-        // Only add entries with at least a name
-        if (entry['Name + Last Initial']) {
+        if (entry['Name']) {
             data.push(entry);
         }
     }
@@ -150,13 +148,9 @@ function parseCSV(csv) {
 }
 
 const mentors = parseCSV(mentorData);
-
-// Filter out incomplete entries
 const completeMentors = mentors.filter(mentor => 
-    mentor['Name + Last Initial'] && 
-    mentor['Assigned Role'] && 
-    mentor['Assigned Day'] && 
-    mentor['Assigned Campus']
+    mentor['Name'] && mentor['Role'] && 
+    (mentor['Day'] && mentor['Campus']) || mentor['Role'] === 'Tutor'
 );
 
 const searchInput = document.getElementById('searchInput');
@@ -174,9 +168,8 @@ function searchMentors(query) {
 
     const normalizedQuery = normalizeString(query);
     const matches = completeMentors.filter(mentor => {
-        const normalizedName = normalizeString(mentor['Name + Last Initial']);
-        return normalizedName.includes(normalizedQuery) || 
-               normalizedName.startsWith(normalizedQuery.split(' ')[0]);
+        const normalizedName = normalizeString(mentor['Name']);
+        return normalizedName.includes(normalizedQuery);
     });
 
     displayResults(matches, query);
@@ -194,21 +187,21 @@ function displayResults(matches, query) {
     }
 
     const resultsHTML = matches.map((mentor, index) => {
-        const fullRole = roleMapping[mentor['Assigned Role']] || mentor['Assigned Role'];
-        const pm = mentor['Assigned PM'] || 'Not assigned';
-        const training = mentor['Training Selection'] || 'Not specified';
+        const fullRole = roleMapping[mentor['Role']] || mentor['Role'];
+        const pm = mentor['PM'] || 'Not assigned';
+        const training = mentor['Training'] || 'Not specified';
         
         return `
             <div class="mentor-card" style="animation-delay: ${index * 0.1}s">
-                <div class="mentor-name">${mentor['Name + Last Initial']}</div>
+                <div class="mentor-name">${mentor['Name']}</div>
                 <div class="info-grid">
                     <div class="info-item">
                         <div class="info-label">Day</div>
-                        <div class="info-value">${mentor['Assigned Day']}</div>
+                        <div class="info-value">${mentor['Day']}</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Campus</div>
-                        <div class="info-value">${mentor['Assigned Campus']}</div>
+                        <div class="info-value">${mentor['Campus']}</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Role</div>
@@ -230,11 +223,10 @@ function displayResults(matches, query) {
 }
 
 function showSuggestions() {
-    // Get a diverse sample of mentors for suggestions
     const suggestions = completeMentors
         .sort(() => 0.5 - Math.random())
         .slice(0, 8)
-        .map(m => m['Name + Last Initial']);
+        .map(m => m['Name']);
 
     const suggestionsHTML = `
         <div class="suggestions">
@@ -249,7 +241,6 @@ function showSuggestions() {
     resultsDiv.innerHTML = suggestionsHTML;
 }
 
-// Event listeners
 searchInput.addEventListener('input', (e) => {
     searchMentors(e.target.value);
 });
@@ -260,5 +251,4 @@ searchInput.addEventListener('keypress', (e) => {
     }
 });
 
-// Initialize with suggestions
 showSuggestions();
