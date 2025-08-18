@@ -1,7 +1,7 @@
 // Mentor data extracted from the PDF
 const mentorData = [
     { name: "A'niya L", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person" },
-    { name: "Aaliyah W", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "In-Person" },
+    { name: "Aaliyah W", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "In-Person" },
     { name: "Abby M", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person" },
     { name: "Adrieanne M", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup" },
     { name: "Alayna F", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup" },
