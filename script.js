@@ -132,7 +132,7 @@ const mentorData = [
     { name: "Tristan G", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
     { name: "Victoria R", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "In-Person (August 28)" },
     { name: "Viranda K", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Warren E R", role: "LM", day: "Thursday", campus: "Downtown (460 n 11th St)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "Virtual Makeup (September 4)" },
+    { name: "Warren E", role: "LM", day: "Thursday", campus: "Downtown (460 n 11th St)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "Virtual Makeup (September 4)" },
     { name: "Zee H", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Same Role (Training Optional)" },
     { name: "Zenora H", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
     { name: "Zoe J", role: "UPM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Virtual Makeup (September 4)" },
