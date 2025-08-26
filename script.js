@@ -24,6 +24,7 @@ const mentorData = [
     { name: "Bailey V", role: "RM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
     { name: "Briauna W", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
     { name: "Breante M", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "TBD" },
+    { name: "Kaleb H", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
     { name: "Camille L", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "In-Person (August 28)" },
     { name: "Catherine R", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "Virtual Makeup (September 4)" },
     { name: "Chakira K", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "In-Person (August 28)" },
