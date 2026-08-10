@@ -1,194 +1,124 @@
-// Mentor data extracted from the PDF
+// Mentor data — PY27 (generated from scheduling CSV)
 const mentorData = [
-    { name: "A'niya L", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Aaliyah W", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Abby M", role: "RM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Abria S", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Adrieanne M", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Alayna F", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Alex A", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Alex C", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Alex T", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Allie D", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Alyssa N", role: "UPM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Alyssa W", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "AJ W", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Amelia R", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Amyia F", role: "LM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Andrew P", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Angela L", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Training materials sent" },
-    { name: "Aniyah E", role: "UPM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "Training materials sent" },
-    { name: "Anthony K", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Ashantis B", role: "RM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Ashley B", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Ashley C", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Ashly D", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Austin V", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Ayanah F", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Ayanah F", role: "LM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Bailey V", role: "RM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Bella C", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Bella T", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Blake L", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Briauna W", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Kaleb H", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Camille L", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Cara K", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Training materials were sent" },
-    { name: "Carolina Q", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Catherine R", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. madeleine (madeleine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Catherine R", role: "LM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Chakira K", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Chakira K", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Cheryl D", role: "UPM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Chris M", role: "UPM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Chris M", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Christeon L", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Christi B", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Christian G", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Chyna F", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Cleve V", role: "LM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "D'Andre T", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "D'Metrie K", role: "LM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "De'Ajah M", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Danaila J", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Danielle N", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Darian G", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Darius S", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Debra W", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Delores H", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Denisha C", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Desiree R", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Destiny C", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Diya S", role: "LM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Elise R", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Emily So", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Emily T", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Esther C", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Esther P", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Eternity H", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Georgia A", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Grace M", role: "RM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Halisha A", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "TBD" },
-    { name: "Hannah A", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Harper T", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Hillary F", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Hunter G", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Ivory G", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Jabari D", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Training materials were sent" },
-    { name: "Jacquari R", role: "UPM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "Training materials were sent" },
-    { name: "Jada N", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Jake C", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "In-Person (August 28)" },
-    { name: "Jake C", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Jake P", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Jaleah R", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Jared K", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Jashana B", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Jasmine B", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Jasmine S", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Jay S", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Training materials were sent" },
-    { name: "Jomiah J", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Joel S", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Jonathan M", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Jordan P", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Jordan R", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Josh U", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Same Role (Training Optional)" },
-    { name: "Josselyn G", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Julie O", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Kaleigh R", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Ka'Trina A", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Ka'Trina A", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Mr. kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Kay B", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Kendrell W", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Kenya C", role: "UPM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Khadijah X", role: "RM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Khalynn R", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Khalynn R", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Kiersten R", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Same Role (Training Optional)" },
-    { name: "Kim H", role: "N/A - Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Kimora H", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "KP P", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Kristina C", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Ladajah B", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Laya F", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Lee Ann L", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Letitia J", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Lisa T", role: "RM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Lyndsi F", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Maddie K", role: "RM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Madison H", role: "UPM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "MaKenzie B", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Makyla C", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Makyla C", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Mary Julia K", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Martin A", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Mason H", role: "UPM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Matt C", role: "RM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Training materials were sent" },
-    { name: "Matthew F", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Melody O", role: "LM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Michael H", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Michelle D", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Molly G", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Mondrai H", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Morgan D", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Natalie A", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Natalie B", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Natalie B", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Naturi S", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Navy T", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Nikki D", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Nioz R", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Niya M", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Nyria M", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Olivia F", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Omele S", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Pamela R", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Paris B", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Paris T", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Parker S", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Peyton D", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Precious M", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Precious S", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Training materials were sent" },
-    { name: "Preston D", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Queen J", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Rachanda S", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Rachel T", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Rannya R", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Reese R", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Reina Q", role: "RM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Richard H", role: "UPM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Riley M", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Rachel (rachel@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Rineetha T", role: "Tutor", day: "NA - Tutor", campus: "NA - Tutor", pm: "NA - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Rock T", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Rodney J", role: "SM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Sereniti H", role: "SM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Shaunna T", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Sierra C", role: "RM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Sierra T", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Stephen H", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Mychell (mychell@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Swesha B", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Talicia G", role: "UPM", day: "Monday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Chasity (chasity@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Tarralyn C", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Tasha W", role: "Tutor", day: "N/A - Tutor", campus: "N/A - Tutor", pm: "N/A - Tutor", training: "Virtual Makeup (September 4)" },
-    { name: "Taylor A", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Taylor F", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Taylor V", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Thomas K", role: "UPM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Tiffani F", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Tomeka P", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Treasure S", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Trinity R", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Tristan G", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Tyverli D", role: "RM", day: "Wednesday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Victoria R", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Warren E", role: "RM", day: "Wednesday", campus: "Downtown (460 n 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Whitnee D", role: "LM", day: "Tuesday", campus: "Airline (14141 Airline Hwy, Suite B)", pm: "Ms. Madeleine (madeleine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Zee H", role: "SM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Ms. Cat (catherine@thebryc.org)", training: "Same Role (Training Optional)" },
-    { name: "Zenora H", role: "LM", day: "Monday", campus: "Downtown (460 N 11th St)", pm: "Mr. Kendrick (kendrick@thebryc.org)", training: "In-Person (August 28)" },
-    { name: "Zoe A", role: "UPM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Training materials sent" },
-    { name: "Zoe A", role: "LM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Lauren (lauren@thebryc.org)", training: "Training materials sent" },
-    { name: "Zoe J", role: "UPM", day: "Thursday", campus: "Downtown (460 N 11th St)", pm: "Ms. Esmine (esmine@thebryc.org)", training: "Virtual Makeup (September 4)" },
-    { name: "Zoe M", role: "SM", day: "Tuesday", campus: "Downtown (460 N 11th St)", pm: "Ms. Jakia (jakia@thebryc.org)", training: "Virtual Makeup (September 4)" }
-];
+    { name: "A'niya L.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Abbey (Abigail) M.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Abby M.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Abria S.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Adrieanne M.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Alayna (Laya) F.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Alex C.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Alexis K.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Allie P.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Alyssa N.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Amylah G.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tristan (tristan@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Amylah G.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Amyrie H.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Anaijha L.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Andrew P.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tristan (tristan@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Annslee B.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Anthony K.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Ashley C.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Ashley S.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Asia C.", role: "", campus: "", day: "", pm: "", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Austin V.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tristan (tristan@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Bailey V.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tristan (tristan@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Bridget R.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Bruce G.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Candace A.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Catherine M.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Cheryl D.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Cleve V.", role: "RM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Tuesday", pm: "Kendrick (kendrick@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Colin T.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Daisy M.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Dania B.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "LT PM", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Danielle N.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Debra W.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Dee (Davidra) K.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Denisha C.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Destiny C.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Dylan S.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "D\u2019Andre T.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Elisa B.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Emily T.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Esther P.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Faith T.", role: "UPM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Tuesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Fran (Franzelia) S.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Gasten G.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "Virtual Training: Thursday, September 10 on Google Meets (link will be shared day-of)" },
+    { name: "Halisha A.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Hannah A.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Ivory S.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Jacquari R.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Catherine (catherine@thebryc.org)", training: "" },
+    { name: "Jada N.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Jah\u2019Maria H.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Jalyn S.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Jared K.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Jayla W.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Jaylah H.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Kendrick (kendrick@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Jenn (Jennifer) L.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "" },
+    { name: "Joel S.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Joline F.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Joshua U.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Julie O.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Aareena (aareena@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Kamryn G.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Kamryn J.", role: "LM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Tuesday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Kenny W.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Catherine (catherine@thebryc.org)", training: "" },
+    { name: "Kenya C.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Ki (Kiana) W.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Rachel (rachel@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Kim (Kimora) H.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Kimora H.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "" },
+    { name: "KP (Karrington) P.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Laura C.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Lauren G.", role: "UPM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Tuesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Lee Ann L.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Letitia  J.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Lyssa (Alyssa) T.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Madison H.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Marla S.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Mathilda O.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Melody O.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "" },
+    { name: "Meosha E.", role: "", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Michael M.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Rachel (rachel@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "MJ (Mary Julia) K.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "LT PM", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Molly G.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "" },
+    { name: "Naomii H.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Nimotalahi O.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Nioz R.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Kendrick (kendrick@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Omega B.", role: "RM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Tuesday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Paris B.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "" },
+    { name: "Parker S.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Kendrick (kendrick@thebryc.org)", training: "" },
+    { name: "Peyton D.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Rachel (rachel@thebryc.org)", training: "" },
+    { name: "Queen (Quinatora) J.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "" },
+    { name: "Rasheda M.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Rayne J.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Reagan M.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tristan (tristan@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Reese A.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "LT PM", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Reina Q.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Kendrick (kendrick@thebryc.org)", training: "" },
+    { name: "Rodrick J.", role: "", campus: "", day: "", pm: "", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Roshaunda J.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Ryeasha P.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Scotland  A.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Catherine (catherine@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Stephen C.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "" },
+    { name: "Tabatha H.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "Virtual Training: Thursday, September 10 on Google Meets (link will be shared day-of)" },
+    { name: "Tae (D\u2019Shantae) E.", role: "", campus: "", day: "", pm: "", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Tamia D.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "LT PM", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Tasha (Natasha) W.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "" },
+    { name: "Taylor M.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Tichelle P.", role: "LM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Tuesday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Tiffani F.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Tomeka P.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Tristan (tristan@thebryc.org)", training: "Virtual Training: Thursday, September 10 on Google Meets (link will be shared day-of)" },
+    { name: "Tori H.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Trevor M.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Trinity R.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "" },
+    { name: "Tristan S.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Tyla W.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Tyler B.", role: "LM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Tuesday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Tyrus G.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Victoria W.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
+    { name: "Wendy S.", role: "UPM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Tuesday", pm: "Aareena (aareena@thebryc.org)", training: "Virtual Training: Thursday, September 10 on Google Meets (link will be shared day-of)" },
+    { name: "Yusra B.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "" },
+    { name: "Zoe A.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Zoe A.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+    { name: "Zoe J.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },];
 
 const searchInput = document.getElementById('searchInput');
 const resultsContainer = document.getElementById('results');
@@ -208,11 +138,22 @@ function searchMentors(query) {
         return;
     }
 
-    const matches = mentorData.filter(mentor => 
+    const matches = mentorData.filter(mentor =>
         mentor.name.toLowerCase().includes(query.toLowerCase())
     );
 
     displayResults(matches, query);
+}
+
+// Only render a field if it actually has a value
+function infoItem(label, value, fullWidth) {
+    if (!value || !value.trim()) return '';
+    const cls = fullWidth ? 'info-item full-width' : 'info-item';
+    return `
+                <div class="${cls}">
+                    <div class="info-label">${label}</div>
+                    <div class="info-value">${value}</div>
+                </div>`;
 }
 
 function displayResults(results, query) {
@@ -224,12 +165,12 @@ function displayResults(results, query) {
             <div class="suggestions">
                 <h3>Try searching for:</h3>
                 <div class="suggestion-list">
-                    <span class="suggestion-item" onclick="searchExample('Jay S')">Jay S</span>
-                    <span class="suggestion-item" onclick="searchExample('Alex')">Alex</span>
-                    <span class="suggestion-item" onclick="searchExample('Ashley')">Ashley</span>
-                    <span class="suggestion-item" onclick="searchExample('Chris')">Chris</span>
-                    <span class="suggestion-item" onclick="searchExample('Taylor')">Taylor</span>
+                    <span class="suggestion-item" onclick="searchExample('Madison')">Madison</span>
+                    <span class="suggestion-item" onclick="searchExample('Zoe')">Zoe</span>
+                    <span class="suggestion-item" onclick="searchExample('Abby')">Abby</span>
+                    <span class="suggestion-item" onclick="searchExample('Cleve')">Cleve</span>
                 </div>
+                <p style="margin-top:15px;color:#667eea;">Tip: try your preferred name, and search just your first name if your last initial doesn't match.</p>
             </div>
         `;
         return;
@@ -239,26 +180,11 @@ function displayResults(results, query) {
         <div class="mentor-card" style="animation-delay: ${index * 0.1}s">
             <div class="mentor-name">${mentor.name}</div>
             <div class="info-grid">
-                <div class="info-item">
-                    <div class="info-label">Role</div>
-                    <div class="info-value">${roleDefinitions[mentor.role] || mentor.role}</div>
-                </div>
-                <div class="info-item">
-                    <div class="info-label">Day</div>
-                    <div class="info-value">${mentor.day}</div>
-                </div>
-                <div class="info-item full-width">
-                    <div class="info-label">Campus</div>
-                    <div class="info-value">${mentor.campus}</div>
-                </div>
-                <div class="info-item full-width">
-                    <div class="info-label">Program Manager</div>
-                    <div class="info-value">${mentor.pm}</div>
-                </div>
-                <div class="info-item full-width">
-                    <div class="info-label">Training Choice</div>
-                    <div class="info-value">${mentor.training}</div>
-                </div>
+                ${infoItem('Role', roleDefinitions[mentor.role] || mentor.role, false)}
+                ${infoItem('Day', mentor.day, false)}
+                ${infoItem('Campus', mentor.campus, true)}
+                ${infoItem('Program Manager', mentor.pm, true)}
+                ${infoItem('Training', mentor.training, true)}
             </div>
         </div>
     `).join('');
@@ -272,17 +198,10 @@ function searchExample(name) {
 }
 
 // Event listeners
-searchInput.addEventListener('input', (e) => {
-    searchMentors(e.target.value);
-});
-
+searchInput.addEventListener('input', (e) => searchMentors(e.target.value));
 searchInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        searchMentors(e.target.value);
-    }
+    if (e.key === 'Enter') searchMentors(e.target.value);
 });
 
 // Focus on search input when page loads
-window.addEventListener('load', () => {
-    searchInput.focus();
-});
+window.addEventListener('load', () => searchInput.focus());
