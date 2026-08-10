@@ -72,7 +72,7 @@ const mentorData = [
     { name: "Lee Ann L.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
     { name: "Letitia  J.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
     { name: "Lyssa (Alyssa) T.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
-    { name: "Madison Hi.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Madison H.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Marla S.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Mathilda O.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Melody O.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "" },
@@ -132,14 +132,21 @@ const roleDefinitions = {
     'Tutor': 'Tutor'
 };
 
+// Normalize for search: lowercase and strip apostrophes (straight ' and curly ’‘`)
+// so "D'Andre", "D’Andre", and "DAndre" all match regardless of how it's typed.
+function normalizeForSearch(s) {
+    return s.toLowerCase().replace(/['\u2019\u2018`]/g, '');
+}
+
 function searchMentors(query) {
-    if (!query.trim()) {
+    const q = normalizeForSearch(query.trim());
+    if (!q) {
         resultsContainer.innerHTML = '';
         return;
     }
 
     const matches = mentorData.filter(mentor =>
-        mentor.name.toLowerCase().includes(query.toLowerCase())
+        normalizeForSearch(mentor.name).includes(q)
     );
 
     displayResults(matches, query);
@@ -165,10 +172,9 @@ function displayResults(results, query) {
             <div class="suggestions">
                 <h3>Try searching for:</h3>
                 <div class="suggestion-list">
-                    <span class="suggestion-item" onclick="searchExample('Madison')">Madison</span>
-                    <span class="suggestion-item" onclick="searchExample('Zoe')">Zoe</span>
-                    <span class="suggestion-item" onclick="searchExample('Abby')">Abby</span>
-                    <span class="suggestion-item" onclick="searchExample('Cleve')">Cleve</span>
+                    ${["A'niya", "Madison", "Zoe", "Jah'Maria"].map(n =>
+                        `<span class="suggestion-item" data-name="${escapeHtml(n)}">${escapeHtml(n)}</span>`
+                    ).join('')}
                 </div>
                 <p style="margin-top:15px;color:#667eea;">Tip: try your preferred name, and search just your first name if your last initial doesn't match.</p>
             </div>
@@ -192,10 +198,26 @@ function displayResults(results, query) {
     resultsContainer.innerHTML = resultHTML;
 }
 
-function searchExample(name) {
+// Escape text for safe insertion into HTML (handles &, <, >, and " so it's
+// safe in both element text and double-quoted attributes like data-name).
+function escapeHtml(s) {
+    return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+// Delegated click handler for the suggestion chips. Because it reads the name
+// from data-name rather than a hard-coded JS string, apostrophes and any other
+// characters are handled safely — no quote-escaping to get wrong.
+resultsContainer.addEventListener('click', (e) => {
+    const chip = e.target.closest('.suggestion-item');
+    if (!chip) return;
+    const name = chip.dataset.name;
     searchInput.value = name;
     searchMentors(name);
-}
+});
 
 // Event listeners
 searchInput.addEventListener('input', (e) => searchMentors(e.target.value));
