@@ -1,6 +1,7 @@
 // Mentor data — PY27 (generated from scheduling CSV)
 const mentorData = [
     { name: "A'niya L.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Aareena (aareena@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Aaliyah W.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Kendrick (kendrick@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year.)" },
     { name: "Abbey (Abigail) M.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Abby M.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
     { name: "Abria S.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
