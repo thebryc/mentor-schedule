@@ -147,6 +147,8 @@ const mentorData = [
     { name: "Zoe A.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
     { name: "Zoe A.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
     { name: "Zoe J.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Zoe M.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Rachel (rachel@thebryc.org)", training: "No training required \u2014 you're returning to the same role as last year." },
+
 ];
 
 const searchInput = document.getElementById('searchInput');
