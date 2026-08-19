@@ -18,6 +18,7 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 20px;
@@ -93,6 +94,14 @@
             background: #c50e4e;
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(237, 18, 95, 0.35);
+        }
+
+        .site-logo {
+            display: block;
+            max-width: 240px;
+            width: 55%;
+            height: auto;
+            margin: 0 auto 25px;
         }
 
         .search-container {
@@ -255,13 +264,14 @@
     </style>
 </head>
 <body>
+    <img src="logo.png" alt="BRYC logo" class="site-logo">
     <div class="container">
-        <h1>👥 Mentor Schedule Search</h1>
+        <h1>🎓 Mentor Schedule Search</h1>
         <p class="subtitle">Find your mentoring schedule details</p>
         
         <div class="info-box">
 
-            <p><strong>Programs begin the week of September 14th at 6pm on your assigned day!</strong></p>
+            <p><strong>Programs begins at 6pm on your assigned day!</strong></p>
 
             <p><strong>All trainings will run from 5:30–7:30pm.</strong></p>
 
