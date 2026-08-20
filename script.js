@@ -125,6 +125,7 @@ const mentorData = [
     { name: "Rasheda M.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Rayne J.", role: "RM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Kendrick (kendrick@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Reagan M.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tristan (tristan@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
+    { name: "Rebecca H.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Reese A.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Catherine (catherine@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
     { name: "Reina Q.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Monday", pm: "Tim (tim@thebryc.org)", training: "Please let Angela know!" },
     { name: "Rodrick J.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Jack (jack@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
