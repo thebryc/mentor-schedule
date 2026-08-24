@@ -104,7 +104,7 @@ const mentorData = [
     { name: "Madison H.", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Madisyn T.", role: "LM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Jack (jack@thebryc.org)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
     { name: "Maeve (Katherine) L.", role: "Tutor", campus: "Virtual Tutor", day: "Tutor", pm: "N/A (Virtual Tutor)", training: "Virtual Training: Thursday, September 3 on Google Meets (link will be shared day-of)" },
-    { name: "Makyla C. 1", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Wednesday", pm: "Lauren (lauren@thebryc.org)", training: "Please let Angela know!" },
+    { name: "Makyla C. 1", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "Please let Angela know!" },
     { name: "Makyla C. 2", role: "UPM", campus: "Downtown (460 N 11th St)", day: "Thursday", pm: "Lauren (lauren@thebryc.org)", training: "Please let Angela know!" },
     { name: "Malia H.", role: "SM", campus: "Downtown (460 N 11th St)", day: "Tuesday", pm: "Catherine (catherine@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
     { name: "Mandy G.", role: "SM", campus: "Airline (14141 Airline Hwy, Suite B)", day: "Wednesday", pm: "Tim (tim@thebryc.org)", training: "In-Person: Thursday, August 27th at BRYC Airline (14141 Airline Hwy, Suite B)" },
